@@ -23,4 +23,4 @@ Step 5: Assign a package to a repository
 - As a suggestion check the box for `Inherit access from source repository (recommended)`
 
 Step 6: Check the visibilit of the package within the repository
-- In the right sided vertical bar you should see the Package `hello-package`. Click on the name to opern a new window showing further package details, like the docker image pull command: ` ` 
+- In the right sided vertical bar you should see the Package `hello-package`. Click on the name to opern a new window showing further package details, like the docker image pull command: `docker pull ghcr.io/sustainability-zhaw/hello-package:latest` .
