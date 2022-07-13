@@ -15,3 +15,7 @@ Step 3: create a docker image
 
 Step 4: Push the package to Git
 - `docker push ghcr.io/sustainability-zhaw/hello-api-temp:latest`
+
+Step 5: Assign a package to a repository
+- Select the Namespace path `sustainability-zhaw`and select `Packages`
+- Select the package names `hello-package` and click on `settings` in the right vertical bar.
