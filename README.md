@@ -19,4 +19,5 @@ Step 4: Push the package to Git
 Step 5: Assign a package to a repository
 - Select the Namespace path `sustainability-zhaw`and select `Packages`
 - Select the package names `hello-package` and click on `Package settings` in the right sided vertical bar.
-- Select the green button `Repository` and address the package to a repository of your choice. In our case it is the repository `hello-package`.
+- Select the green button `Add Repository` and address the package to a repository of your choice. In our case it is the repository `hello-package`.
+- As a suggestion check the box for `Inherit access from source repository (recommended)`
