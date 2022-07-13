@@ -1,4 +1,4 @@
-# hello-api in a docker container pushed as github packages
+# Build a docker image - push it to github packages - pull it to local - add Github actions
 
 The purpose of this repo is to implement a simple docker container using the Github Packages manager
 
