@@ -21,3 +21,6 @@ Step 5: Assign a package to a repository
 - Select the package names `hello-package` and click on `Package settings` in the right sided vertical bar.
 - Select the green button `Add Repository` and address the package to a repository of your choice. In our case it is the repository `hello-package`.
 - As a suggestion check the box for `Inherit access from source repository (recommended)`
+
+Step 6: Check the visibilit of the package within the repository
+- In the right sided vertical bar you should see  
