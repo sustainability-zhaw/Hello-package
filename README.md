@@ -1,4 +1,4 @@
-# Build a docker image - push it to github packages - pull it to local - add Github actions
+# Build a docker image - push it to github packages - pull it to local
 
 The purpose of this repo is to implement a simple docker container using the Github Packages manager.
 A very good tutorial can be found at: `https://www.youtube.com/watch?v=qoMg86QA5P4`
