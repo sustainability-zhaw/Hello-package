@@ -27,7 +27,10 @@ b) docker buildx build --platform linux/amd64,linux/arm64 -t ghcr.io/sustainabil
 
 ## Testing
 Test the service using the following command. 
-`docker run --rm -d -p 8080:80 --name hello ghcr.io/sustainability-zhaw/hello_api-temp:latest`
+```
+docker run -itd -p 80:80 --entrypoint /bin/sh ghcr.io/sustainability-zhaw/hello_api-temp:latest
+curl localhost/hello
+```
 
 ## Pushing the package to Git
 Push the docker Image to git
