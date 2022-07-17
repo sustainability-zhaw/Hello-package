@@ -17,7 +17,12 @@ export CR_PAT | docker login ghcr.io -u bajk --password-stdin
 ## Creating a docker image
 - navigate to the local Git folder containing all docker relevant files and copy the path to this folder.
 - In Terminal switch to this folder.
-- In Terminal enter `docker build -t ghcr.io/sustainability-zhaw/hello_api-temp:latest` .
+- In Terminal enter either a) for single platform use or b) for multiplatform use.
+```
+a) docker build -t ghcr.io/sustainability-zhaw/hello_api-temp:latest` .
+b) docker buildx build --platform linux/amd64,linux/arm64 -t ghcr.io/sustainability-zhaw/hello_api-temp:latest --push .
+```
+
 - Check if the new image is visible in docker desktop
 
 ## Testing
