@@ -21,13 +21,12 @@ export CR_PAT | docker login ghcr.io -u bajk --password-stdin
 - Check if the new image is visible in docker desktop
 
 ## Testing
-One can test the frontend using the following command. 
+Test the service using the following command. 
 `docker run --rm -d -p 8080:80 --name hello ghcr.io/sustainability-zhaw/hello_api-temp:latest`
 
 ## Pushing the package to Git
-```
-docker push ghcr.io/sustainability-zhaw/hello-api-temp:latest
-```
+Push the docker Image to git
+`docker push ghcr.io/sustainability-zhaw/hello-api-temp:latest`
 
 ## Assigning a package to a repository
 - Select the Namespace path `sustainability-zhaw`and select `Packages`
