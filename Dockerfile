@@ -1,5 +1,5 @@
 # start from rstudio/plumber image 
-FROM rstudio/plumber:latest
+FROM rstudio/plumber AS builder
 
 # general update check, additional installation needed 
 RUN apt-get update -qq \
@@ -9,6 +9,7 @@ RUN apt-get update -qq \
   && rm -rf /var/lib/apt/lists/*
 
 
+RUN R -e "install.packages('libcurl:latest')"
 
 # set the container work directory 
 WORKDIR /hello
@@ -18,11 +19,10 @@ COPY config.yml /hello
 #COPY data/. /data 
 COPY src/. /hello/src 
 
-RUN R -e "install.packages('libcurl:latest')"
 
 # launch the plumbered R file 
 #CMD Rscript src/hello.R
 #CMD ["Rscript" "/src/hello.R"]
 #CMD ["Rscript src/hello.R"]
-#CMD ["Rscript src/hello.R"]
-CMD ["hello.R"]
+CMD ["Rscript /src/hello.R"]
+#CMD ["hello.R"]
