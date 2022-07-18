@@ -23,6 +23,6 @@ COPY src/. /hello/src
 # launch the plumbered R file 
 #CMD Rscript src/hello.R
 #CMD ["Rscript" "/src/hello.R"]
-#CMD ["Rscript src/hello.R"]
-CMD ["Rscript /src/hello.R"]
+CMD ["Rscript src/hello.R"]
+#CMD ["Rscript /src/hello.R"]
 #CMD ["hello.R"]
