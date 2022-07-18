@@ -21,5 +21,7 @@ COPY src/. /hello/src
 RUN R -e "install.packages('libcurl:latest')"
 
 # launch the plumbered R file 
-CMD ["Rscript src/hello2.R"]
+CMD Rscript src/hello2.R
+#CMD ["Rscript" "src/hello2.R"]
+#CMD ["Rscript /src/hello2.R"]
 #CMD ["hello.R"]
